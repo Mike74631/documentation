@@ -61,7 +61,7 @@ To consume an API with multiple responses, your contract should inherit from [Ch
 >
 > Making a GET request will fail unless your deployed contract has enough LINK to pay for it. **Learn how to [Acquire testnet LINK](../acquire-link/) and [Fund your contract](../fund-your-contract/)**.
 
-Assume that a user wants to obtain the ETH price quoted against three different currencies: _BTC_ , _USD_ and _EUR_. If they use only a single-word job (cf. [Single Word Response](/docs/single-word-response/)), it would require three different requests. To make that more efficient, they can use multi-word responses to do it all in a single request as shown in the following example:
+Assume that a user wants to obtain the ETH price quoted against three different currencies: _BTC_ , _USD_ and _EUR_. If they use only a single-word job, it would require three different requests. For a comparison, see the [Single Word Response](/docs/single-word-response/) example. To make these requests more efficient, use multi-word responses to do it all in a single request as shown in the following example:
 
 ```solidity Kovan
 {% include 'samples/APIRequests/MultiWordConsumer.sol' %}
