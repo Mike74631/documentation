@@ -113,7 +113,7 @@ To use this contract:
    - The `req.add("get", "<cryptocompareURL>")` request parameter provides the oracle node with the [url](https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD) where to fetch the _ETH-USD_ trading info.
    - The `req.add('path', 'RAW,ETH,USD,VOLUME24HOUR')` request parameter tells the oracle node where to fetch the 24h ETH volume in the _json_ response. It uses a [JSONPath expression](https://jsonpath.com/) with comma(,) delimited string for nested objects. For example: `'RAW,ETH,USD,VOLUME24HOUR'`.
    - The `req.addInt('times', timesAmount)` request parameter provides the oracle node with the multiplier `timesAmount` by which the fetched volume is multiplied. Use this to remove any decimals from the volume.
-     Note that The `APIConsumer` in the example above is flexible enough to call any public API, so long as the URL in the _get_ , the _path_ and the _timesAmounnt_ are correct.
+     The `APIConsumer` in the example above is flexible enough to call any public API as long as the URL in _get_, _path_, and _timesAmounnt_ are correct.
 
 1. After few seconds, call the `volume` function. You should get a non-zero response.
 
