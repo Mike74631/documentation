@@ -28,7 +28,7 @@ This example shows how to:
 
 - Call an API and fetch the response that is an arbitrary-length raw byte data.
 
-[IPFS](https://docs.ipfs.io/) is a decentralized file system for storing and accessing files, websites, applications, and data. For this example, we stored in IPFS a _json_ file that contains an arbitrary-length raw byte data. To check the response, you can directly paste the following URL in your browser `https://ipfs.io/ipfs/QmZgsvrA1o1C8BGCrx6mHTqR1Ui1XqbCrtbMVrRLHtuPVD?filename=big-api-response.json` or run this command in your terminal:
+[IPFS](https://docs.ipfs.io/) is a decentralized file system for storing and accessing files, websites, applications, and data. For this example, we stored in IPFS a _JSON_ file that contains arbitrary-length raw byte data. To check the response, directly paste the following URL in your browser: `https://ipfs.io/ipfs/QmZgsvrA1o1C8BGCrx6mHTqR1Ui1XqbCrtbMVrRLHtuPVD?filename=big-api-response.json` Alternatively, run the following command in your terminal:
 
 ```curl
 curl -X 'GET' \
