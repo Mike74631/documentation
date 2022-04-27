@@ -22,7 +22,7 @@ metadata:
 
 ## Overview
 
-This guide explains how to make an HTTP GET request to an external API from a smart contract, using Chainlink's [Request & Receive Data](/docs/request-and-receive-data/) cycle and then receive one single response.
+This guide explains how to make an HTTP GET request to an external API from a smart contract using Chainlink's [Request & Receive Data](/docs/request-and-receive-data/) cycle and receive a single response.
 
 **Table of Contents**
 
