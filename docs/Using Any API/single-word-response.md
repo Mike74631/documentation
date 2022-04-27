@@ -37,7 +37,7 @@ This example shows how to:
 
 - Fetch a single word response in a single call.
 
-[Cryptocompare GET /data/pricemultifull API](https://min-api.cryptocompare.com/documentation?key=Price&cat=multipleSymbolsFullPriceEndpoint) returns all the current trading info (price, vol, open, high, low ..Etc) of any list of cryptocurrencies in any other currency that you need. To check the response, you can directly paste the following URL in your browser `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD` or run this command in your terminal:
+The [Cryptocompare GET /data/pricemultifull API](https://min-api.cryptocompare.com/documentation?key=Price&cat=multipleSymbolsFullPriceEndpoint) returns the current trading info (price, vol, open, high, low) of any list of cryptocurrencies in any other currency that you need. To check the response, you can directly paste the following URL in your browser `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD` or run this command in your terminal:
 
 ```curl
 curl -X 'GET' \
