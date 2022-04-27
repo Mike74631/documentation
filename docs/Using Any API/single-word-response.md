@@ -111,7 +111,7 @@ To use this contract:
 1. Run the `requestVolumeData` function. This builds the `Chainlink.Request` using the correct parameters:
 
    - The `req.add("get", "<cryptocompareURL>")` request parameter provides the oracle node with the [url](https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD) where to fetch the _ETH-USD_ trading info.
-   - The `req.add('path', 'RAW,ETH,USD,VOLUME24HOUR')` request parameter tells the oracle node where to fetch the 24h ETH volume in the _json_ response. It uses [JSONPath expression](https://jsonpath.com/) with comma(,) delimited string for nested objects, for example: `'RAW,ETH,USD,VOLUME24HOUR'`.
+   - The `req.add('path', 'RAW,ETH,USD,VOLUME24HOUR')` request parameter tells the oracle node where to fetch the 24h ETH volume in the _json_ response. It uses a [JSONPath expression](https://jsonpath.com/) with comma(,) delimited string for nested objects. For example: `'RAW,ETH,USD,VOLUME24HOUR'`.
    - The `req.addInt('times', timesAmount)` request parameter provides the oracle node with the multiplier `timesAmount` by which the fetched volume is to be multiplied , purpose being to remove any decimals from it.
      Note that The `APIConsumer` in the example above is flexible enough to call any public API, so long as the URL in the _get_ , the _path_ and the _timesAmounnt_ are correct.
 
