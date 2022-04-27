@@ -90,7 +90,7 @@ To use this contract:
 
    - The `req.add("urlBTC", "<cryptocompareETHBTCURL>")` request parameter provides the oracle node with the [url](https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC) where to fetch the _ETH-BTC_ price. Same logic for `req.add("urlEUR", "<cryptocompareETHEURURL>")` and `req.add("urlUSD", "<cryptocompareETHUSDURL>")`.
    - THe `req.add('pathBTC', 'BTC')` request parameter tells the oracle node where to fetch the _ETH-BTC_ price in the _json_ response. Same logic for `req.add('pathUSD', 'EUR')` and `req.add('pathEUR', 'USD')`.
-     Note that because we are providing the urls and paths , The `MultiWordConsumer` in the example above is flexible enough to call any public API, so long as the URLs and paths are correct.
+     Because you provide the URLs and paths, the `MultiWordConsumer` in the example can call any public API as long as the URLs and paths are correct.
 
 1. After few seconds, call the `btc`, `usd` , and `eur` functions. You should get a non-zero responses.
    The job spec for the Chainlink node in this example can be found [here](/docs/direct-request-multi-word/).
