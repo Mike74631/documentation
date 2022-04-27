@@ -45,7 +45,7 @@ curl -X 'GET' \
   -H 'accept: application/json'
 ```
 
-The response should be similar to the following:
+The response should be similar to the following example:
 
 ```json
 {
